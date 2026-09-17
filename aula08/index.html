@@ -1,8 +1,3 @@
-pagina principal 
-1 video local mp4
-1 exibir audio local mp3
-um link logo do youtube  vai para a pagina video youtube html que leva para um video do youtube e botão de voltar
-a mesma coisa com o vimeo
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +6,25 @@ a mesma coisa com o vimeo
     <title>Aula08-VideosEAudios</title>
 </head>
 <body>
-    
+    <h1>Aula08 - Videos e áudios</h1>
+    <hr>
+    <br>
+    <br>
+    <h3>Video e audio local</h3>
+    <br>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="./audios/hinodofluminense.mp3" type="audio/mp3">
+    </audio>
+    <br>
+    <video height="600" controls autoplay>
+        <source src="./videos/torcidafluminense.mp4" type="video/mp4">
+    </video>
+    <br>
+    <br>
+    <h3>Youtube</h3>
+    <a href="./paginas/Videoyoutube.html" target="_self" rel="next"><img src="./img/yotube.png"></a>
+    <br>
+    <h3>Vimeo</h3>
+    <a href="./paginas/Videovimeo.html" target="_self" rel="next"><img src="./img/vimeo.png"></a>
 </body>
 </html>
