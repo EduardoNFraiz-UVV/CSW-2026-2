@@ -1,45 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 10</title>
-    <style>
-        body{
-            background-image: linear-gradient(90deg,#092741, #8fe1ff);
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        h1 {
-            color: red;
-            text-align: center;
-
-        }
-
-        div {
-            background-image: url(./imagens/images.jpg);
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-    </style>
+    <title>Aula 10 - Identificadores</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div>
-        <h1>Exercício das cores</h1>
-        <h2>Aula 10 - Cores</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum deleniti sit, dicta consequatur rerum facere beatae <br>temporibus placeat nobis esse, nesciunt odit consequuntur delectus inventore laboriosam, ea amet molestias.</p>
-        <br>
-        <hr>
-        <br>
-        <h2>Aula 10 - Gradiente</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, praesentium odit dolores perferendis ducimus aperiam, <br>sit quia est assumenda magni molestiae facilis veniam eum a doloribus, repellat non cumque hic.</p>
+    <h1>Identificadores em CSS</h1>
+
+    <div class="linha">
+        <div class="quadrado" id="vermelho"></div>
+        <div class="quadrado" id="verde"></div>
+        <div class="quadrado" id="azul"></div>
+        <div class="quadrado" id="cinza"></div>
+        <div class="quadrado" id="azul-escuro"></div>
+    </div>
+
+    <hr>
+
+    <h2>Exemplo de hover</h2>
+    <p>Passe o mouse sobre o quadrado abaixo para ver o que acontece.</p>
+    <div class="quadrado" id="exemplo-hover">
+        <span class="numero revela">1</span>
+        <span class="frase revela">Você passou o mouse!</span>
+    </div>
+
+    <hr>
+
+    <div class="grade-l">
+        <div class="quadrado" id="efeito1">
+            <span class="numero">1</span>
+        </div>
+        <div class="quadrado" id="efeito2">
+            <span class="numero">2</span>
+            <span class="frase revela">Fundo amarelo e fonte vermelha</span>
+        </div>
+        <div class="quadrado" id="efeito3">
+            <span class="numero">3</span>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>Exemplos de pseudo elementos</h2>
+    <p id="texto-pseudo">Lorem ipsum dolor sit amet, <span class="destaque">consectetur adipiscing elit</span>.
+        Donec faucibus erat vitae ipsum placerat porttitor. Duis turpis urna, rhoncus quis auctor sit amet, feugiat in
+        lacus. Pellentesque a leo vehicula, tincidunt metus et, pharetra libero. Vestibulum et aliquet turpis, quis
+        dignissim ligula. In et odio lacus. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras
+        justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+    <div class="links">
+        <a href="#">Primeiro</a>
+        <a href="#">Segundo</a>
+        <a href="#">Terceiro</a>
     </div>
 </body>
 </html>
