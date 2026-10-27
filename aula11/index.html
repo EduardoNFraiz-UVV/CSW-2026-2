@@ -3,155 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula11- Flexbox</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Aula 10 - Identificadores</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <h1>Identificadores em CSS</h1>
 
-    <h1>Flexbox</h1>
-    <br>
-    <h2>Slide5</h2>
-
-    <div id="atv5">
-        <div class="container1">
-            <div class="cardlaranja1"></div>
-            <div class="cardlaranja1"></div>
-            <div class="cardlaranja1"></div>
-        </div>
-            <div class="container2">
-            <div class="cardlaranja1"></div>
-            <div class="cardlaranja1"></div>
-            <div class="cardlaranja1"></div>
-        </div>
-            <div class="container3">
-            <div class="cardlaranja1"></div>
-            <div class="cardlaranja1"></div>
-            <div class="cardlaranja1"></div>
-        </div>
-            <div class="container4">
-            <div class="cardlaranja1"></div>
-            <div class="cardlaranja1"></div>
-            <div class="cardlaranja1"></div>
-        </div>
-            <div class="container5">
-            <div class="cardlaranja1"></div>
-            <div class="cardlaranja1"></div>
-            <div class="cardlaranja1"></div>
-        </div>
+    <div class="linha">
+        <div class="quadrado" id="vermelho"></div>
+        <div class="quadrado" id="verde"></div>
+        <div class="quadrado" id="azul"></div>
+        <div class="quadrado" id="cinza"></div>
+        <div class="quadrado" id="azul-escuro"></div>
     </div>
-    
-    <br>
-    <h2>Slide6</h2>
-    <div id="atv6">
-        <div class="container6">
-            <div class="cardlaranja2"></div>
-            <div class="cardlaranja3"></div>
-            <div class="cardlaranja4"></div>
+
+    <hr>
+
+    <h2>Exemplo de hover</h2>
+    <p>Passe o mouse sobre o quadrado abaixo para ver o que acontece.</p>
+    <div class="quadrado" id="exemplo-hover">
+        <span class="numero revela">1</span>
+        <span class="frase revela">Você passou o mouse!</span>
+    </div>
+
+    <hr>
+
+    <div class="grade-l">
+        <div class="quadrado" id="efeito1">
+            <span class="numero">1</span>
         </div>
-            <div class="container7">
-            <div class="cardlaranja2"></div>
-            <div class="cardlaranja3"></div>
-            <div class="cardlaranja4"></div>
+        <div class="quadrado" id="efeito2">
+            <span class="numero">2</span>
+            <span class="frase revela">Fundo amarelo e fonte vermelha</span>
         </div>
-            <div class="container8">
-            <div class="cardlaranja2"></div>
-            <div class="cardlaranja3"></div>
-            <div class="cardlaranja4"></div>
-        </div>
-            <div class="container9">
-            <div class="cardlaranja2"></div>
-            <div class="cardlaranja3"></div>
-            <div class="cardlaranja4"></div>
+        <div class="quadrado" id="efeito3">
+            <span class="numero">3</span>
         </div>
     </div>
 
-    <h2>Slide7</h2>
-    <div id="atv7">
-        <div class="container10">
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja6"></div>
-            <div class="cardlaranja6"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja6"></div>
-            <div class="cardlaranja6"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja6"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja6"></div>
-            <div class="cardlaranja5"></div>
-        </div>
-        <div class="container11">
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja6"></div>
-            <div class="cardlaranja6"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja6"></div>
-            <div class="cardlaranja6"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja6"></div>
-            <div class="cardlaranja5"></div>
-            <div class="cardlaranja6"></div>
-            <div class="cardlaranja5"></div>
-        </div>
+    <hr>
+
+    <h2>Exemplos de pseudo elementos</h2>
+    <p id="texto-pseudo">Lorem ipsum dolor sit amet, <span class="destaque">consectetur adipiscing elit</span>.
+        Donec faucibus erat vitae ipsum placerat porttitor. Duis turpis urna, rhoncus quis auctor sit amet, feugiat in
+        lacus. Pellentesque a leo vehicula, tincidunt metus et, pharetra libero. Vestibulum et aliquet turpis, quis
+        dignissim ligula. In et odio lacus. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras
+        justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+    <div class="links">
+        <a href="#">Primeiro</a>
+        <a href="#">Segundo</a>
+        <a href="#">Terceiro</a>
     </div>
-
-    <h2>Slide 15 e 16</h2>
-
-    <h3>Nível Médio: Cards</h3>
-    <div id="atv15">
-        <div class="cards-container">
-            <div class="card">
-                <h4>Planejamento</h4>
-                <p>Organize suas tarefas da semana e acompanhe o que já foi concluído.</p>
-                <button>Saiba mais</button>
-            </div>
-            <div class="card">
-                <h4>Desenvolvimento</h4>
-                <p>Escreva o código com Flexbox, ajustando o alinhamento e a distribuição dos elementos na tela, e veja o layout se adaptar sozinho a qualquer tamanho de janela.</p>
-                <button>Saiba mais</button>
-            </div>
-            <div class="card">
-                <h4>Entrega</h4>
-                <p>Publique o projeto e compartilhe o resultado.</p>
-                <button>Saiba mais</button>
-            </div>
-        </div>
-    </div>
-
-    <h3>Nível Difícil: Galeria Dinâmica</h3>
-    <p><a href="paginas/galeria.html">Abrir o layout de painel com galeria</a></p>
-
 </body>
 </html>
